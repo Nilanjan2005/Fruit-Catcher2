@@ -63,9 +63,9 @@ class Game{
             // Add code to diplay the scores of both 
             // the players on the screen
             textSize(50);
-            fill("black");
+            fill("white");
             text("Player1 : " + allPlayers.player1.score,50,50);
-            text("Player2 : "+ allPlayers.player2.score,50,100);
+            text("Player2: "+ allPlayers.player2.score,50,100);
 
 
         }
@@ -102,9 +102,7 @@ class Game{
         // Add code to destroy fruits, calculate scores and
         // update the scores to the database
         if(player.index !== null){
-
             for( var i =0;  i< fruitGroup.length ;i++){
-
         if(fruitGroup.get(i).isTouching(players)){
             fruitGroup.get(i).destroy();
             player.score += 1;
